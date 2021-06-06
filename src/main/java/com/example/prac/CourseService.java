@@ -13,6 +13,7 @@ public class CourseService implements CourseInterface {
     @Autowired
    private CourseDao courseDao;
 
+
     public CourseService() {
 
 
@@ -20,7 +21,9 @@ public class CourseService implements CourseInterface {
 
     @Override
     public List<Course> getCourses() {
+        System.out.println("RAVIiIIIIIIIIIIIIIIIIIIIII");
         return courseDao.findAll();
+
 
     }
 
